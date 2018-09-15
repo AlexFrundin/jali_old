@@ -45,6 +45,7 @@ def usluga(request, id):
 
 def news(request):
     args = {}
+    args['mp_9'] = Bottom_footer.objects.get(id=1)
     args['news'] = News.objects.all()
     return render(request, "news-all.html", args)
 
