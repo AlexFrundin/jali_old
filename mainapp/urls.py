@@ -8,7 +8,7 @@ urlpatterns = [
     path('news/<int:id>', views.snews, name='snews'),
     path('news', views.news, name='news'),
     path('service/<int:id>', views.usluga, name='usluga'),
-    path('p/<int:id>', views.page, name='page'),
+    path('p/<str:link>', views.page, name='page'),
     #url(r'list', views.list, name='list'),
     #url(r'copy', views.copy, name='copy'),
 ]
